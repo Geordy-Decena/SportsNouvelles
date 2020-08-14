@@ -1,0 +1,435 @@
+.background {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1000;
+    top: 0px
+}
+
+.title1{
+    position: fixed;
+    top: 15px;
+    color: white;
+    text-align: center;
+    width: 100vw;
+    z-index: 10000000000;
+    font-size: 40px;
+    margin-left: -80px;
+}
+
+.title2{
+    position: fixed;
+    top: 16px;
+    color: red;
+    text-align: center;
+    width: 100vw;
+    z-index: 10000000000;
+    font-size: 40px;
+    margin-left: 62px;
+}
+
+.footballImg{
+    position: fixed;
+    z-index: 10000000;
+    top: 0px;
+    margin-left: -260px;
+    transform: scale(0.6);
+    opacity: 1;
+    margin-top: 150px;
+    filter: brightness(20%);
+}
+
+.basketballImg{
+    position: fixed;
+    z-index: 1000000;
+    top: 0px;
+    margin-left: -265px;
+    transform: scale(0.45);
+    opacity: 1;
+    margin-top: -450px;
+    filter: brightness(20%);
+    
+}
+
+.hockeyImg{
+    position: fixed;
+    z-index: 1000000;
+    top: 0px;
+    margin-left: 900px;
+    transform: scale(0.5);
+    opacity: 1;
+    margin-top: -180px;
+    filter: brightness(25%);
+    
+}
+
+.baseballImg{
+    position: fixed;
+    z-index: 1000000;
+    top: -100px;
+    margin-left: 850px;
+    transform: scale(0.5);
+    opacity: 1;
+    margin-top: 150px;
+    filter: brightness(25%);
+    
+}
+
+.sportsHeader {
+    position: fixed;
+    text-align: center;
+    color: white;
+    top: 0px;
+    z-index: 10000;
+    width: 50vw;
+    margin: 0px 25vw 0px 25vw;
+    height: 170px;
+    padding-top: 20px;
+    background-color: black;
+    border-bottom: 2px solid white;
+}
+
+.sportsHeader h1{
+    position: absolute;
+    display: inline-block;
+    margin: 60px 0px 0px -460px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sportsHeader h1:hover{
+   transform: scale(1.1);
+}
+
+.sportsHeader h2{
+    position: absolute;
+    display: inline-block;
+    margin: 60px 0px 0px -280px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sportsHeader h2:hover{
+   transform: scale(1.1);
+}
+
+.sportsHeader h3{
+    position: absolute;
+    display: inline-block;
+    margin: 60px 0px 0px -125px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sportsHeader h3:hover{
+   transform: scale(1.1);
+}
+
+.sportsHeader h4{
+    position: absolute;
+    display: inline-block;
+    margin: 60px 0px 0px 45px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sportsHeader h4:hover{
+   transform: scale(1.1);
+}
+
+.sportsHeader h5{
+    position: absolute;
+    display: inline-block;
+    margin: 60px 0px 0px 220px;
+    font-size: 60px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sportsHeader h5:hover{
+   transform: scale(1.1);
+}
+
+.nbaLineOn{
+    position: absolute;
+    border: 3px solid red;
+    width: 150px;
+    top: 155px;
+    margin-left: -118px;
+}
+
+.nflLineOn{
+    position: absolute;
+    border: 3px solid red;
+    width: 140px;
+    top: 155px;
+    margin-left: 60px; 
+}
+
+.nhlLineOn{
+    position: absolute;
+    border: 3px solid red;
+    width: 135px;
+    top: 155px;
+    margin-left: 225px; 
+}
+
+.mlbLineOn{
+    position: absolute;
+    border: 3px solid red;
+    width: 135px;
+    top: 155px;
+    margin-left: 395px; 
+}
+
+.soccerLineOn{
+    position: absolute;
+    border: 3px solid red;
+    width: 260px;
+    top: 155px;
+    margin-left: 570px; 
+}
+
+.newsContainer {
+    border: 2px solid white;
+    width: 50vw;
+    height: 100vh;
+    margin: 172px 25vw 0px 25vw;
+    position: fixed;
+    z-index: 0;
+}
+
+.data{
+    width: 50vw;
+    height: 1400px;
+    margin: 170px 25vw 0px 25vw;
+    position: absolute;
+    overflow: hidden;
+}
+
+.nbaSet{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(0px);
+}
+
+.nbaSet-entering{
+    animation: nbaSet;
+    animation-duration: 0.5s;
+}
+
+@keyframes nbaSet{
+    0%{opacity: 1;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.nba{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(1000px);
+}
+
+.nba-entering{
+    animation: nba;
+    animation-duration: 0.5s;
+}
+
+@keyframes nba{
+    0%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateX(1000px);}
+}
+
+.nflSet{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(0px);
+}
+
+.nflSet-entering{
+    animation: nflSet;
+    animation-duration: 0.5s;
+}
+
+@keyframes nflSet{
+    0%{opacity: 1;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.nfl{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(1000px);
+}
+
+.nfl-entering{
+    animation: nfl;
+    animation-duration: 0.5s;
+}
+
+@keyframes nfl{
+    0%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateX(1000px);}
+}
+
+.nhlSet{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(0px);
+}
+
+.nhlSet-entering{
+    animation: nhlSet;
+    animation-duration: 0.5s;
+}
+
+@keyframes nhlSet{
+    0%{opacity: 1;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.nhl{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(1000px);
+}
+
+.nhl-entering{
+    animation: nhl;
+    animation-duration: 0.3s;
+}
+
+@keyframes nhl{
+    0%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateX(1000px);}
+}
+
+.mlbSet{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(0px);
+}
+
+.mlbSet-entering{
+    animation: mlbSet;
+    animation-duration: 0.5s;
+}
+
+@keyframes mlbSet{
+    0%{opacity: 1;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.mlb{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(1000px);
+}
+
+.mlb-entering{
+    animation: mlb;
+    animation-duration: 0.3s;
+}
+
+@keyframes mlb{
+    0%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateX(1000px);}
+}
+
+.soccerSet{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(0px);
+}
+
+.soccerSet-entering{
+    animation: soccerSet;
+    animation-duration: 0.5s;
+}
+
+@keyframes soccerSet{
+    0%{opacity: 1;transform: translateX(-1000px);}
+    100%{opacity: 1;transform: translateX(0px);}
+}
+
+.soccer{
+    position: absolute;
+    width: 50vw;
+    margin: 0px 0vw 50px 0vw;
+    transform: translateX(1000px);
+}
+
+.soccer-entering{
+    animation: soccer;
+    animation-duration: 0.3s;
+}
+
+@keyframes soccer{
+    0%{opacity: 1;transform: translateX(0px);}
+    100%{opacity: 1;transform: translateX(1000px);}
+}
+
+.headerNBA {
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 20vw;
+    height: 200px;
+    top: 1.3vw;
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    padding: 1vw;
+    float: left;
+    margin: 1vw 0vw 1.3vw 1.9vw;
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+.headerNBA:hover {
+transform: scale(1.05);
+}
+
+.headerNBA h1{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.headerNBA h2{
+    position: absolute;
+    font-size: 25px;
+    line-height: 30px;
+    width: 20vw;
+    bottom: -10px;
+}
+
+.imageNBA {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: -100;
+    display: block;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+}
+
+.link{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    display: block;
+    top: 0px;
+    left: 0px;
+    opacity: 0.5;
+    background-color: blue;
+    z-index: 10000;
+}
